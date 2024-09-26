@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "kanban-spfx-client-side-solution",
+    "id": "f8ecef9f-9c1e-4d8f-bfc3-6e3c3a0a001a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "kanban-spfx description"
+      },
+      "longDescription": {
+        "default": "kanban-spfx description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "kanban-spfx Feature",
+        "description": "The feature that activates elements of the kanban-spfx solution.",
+        "id": "8d34701d-af97-4579-a470-a78383427964",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/kanban-spfx.sppkg"
+  }
+}
