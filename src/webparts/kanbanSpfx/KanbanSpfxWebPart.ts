@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
   type IPropertyPaneConfiguration,
+  PropertyPaneDropdown,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
@@ -14,8 +15,10 @@ import { IKanbanSpfxProps } from './components/IKanbanSpfxProps';
 
 export interface IKanbanSpfxWebPartProps {
   description: string;
+  totalcolumns: number;
 }
 
+// Master parent component
 export default class KanbanSpfxWebPart extends BaseClientSideWebPart<IKanbanSpfxWebPartProps> {
 
   private _isDarkTheme: boolean = false;
@@ -25,6 +28,7 @@ export default class KanbanSpfxWebPart extends BaseClientSideWebPart<IKanbanSpfx
     const element: React.ReactElement<IKanbanSpfxProps> = React.createElement(
       KanbanSpfx,
       {
+        totalcolumns: this.properties.totalcolumns,
         description: this.properties.description,
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
@@ -110,6 +114,18 @@ export default class KanbanSpfxWebPart extends BaseClientSideWebPart<IKanbanSpfx
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
+                }),
+                PropertyPaneDropdown('totalcolumns', {
+                  label: "choose an item",
+                  options: [
+                    { key: 1, text: '1 column' },
+                    { key: 2, text: '2 columns' },
+                    { key: 3, text: '3 columns' },
+                    { key: 4, text: '4 columns' },
+                    { key: 5, text: '5 columns' },
+                    { key: 6, text: '6 columns' }
+                  ],
+                  selectedKey: 3
                 })
               ]
             }

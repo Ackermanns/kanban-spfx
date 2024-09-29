@@ -1,0 +1,8 @@
+{
+  "bundles": {
+    "kanban-spfx-web-part": {
+      "dependencies": [],
+      "asyncChunks": {}
+    }
+  }
+}

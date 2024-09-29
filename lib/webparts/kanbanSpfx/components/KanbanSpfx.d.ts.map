@@ -1,0 +1,1 @@
+{"version":3,"file":"KanbanSpfx.d.ts","sourceRoot":"","sources":["../../../../src/webparts/kanbanSpfx/components/KanbanSpfx.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAE/B,OAAO,KAAK,EAAE,gBAAgB,EAAE,MAAM,oBAAoB,CAAC;AAK3D,eAAO,MAAM,UAAU,mBAAoB,CAAC;AAE5C,QAAA,MAAM,UAAU,EAAE,KAAK,CAAC,iBAAiB,CAAC,gBAAgB,CAezD,CAAA;AAED,eAAe,UAAU,CAAC"}
